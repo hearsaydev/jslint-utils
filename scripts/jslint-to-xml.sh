@@ -65,8 +65,8 @@ else
     # Process `LINTEE` to extract the file extension and basename.  We'll
     # use both to generate the test name that's displayed in Hudson.
     #
-    LINTEE_TYPE=`echo ${LINTEE} | sed 's#\(.*\)\.\([^\.]*\)$#\2#'`
-    LINTEE_BASENAME=`basename ${LINTEE} | sed 's#\(.*\)\.\([^\.]*\)$#\1#'`
+    LINTEE_TYPE=`echo "${LINTEE}" | sed 's#\(.*\)\.\([^\.]*\)$#\2#'`
+    LINTEE_BASENAME=`basename "${LINTEE}" | sed 's#\(.*\)\.\([^\.]*\)$#\1#'`
 
     #
     # Using the extension and basename, generate a test name in the form:
